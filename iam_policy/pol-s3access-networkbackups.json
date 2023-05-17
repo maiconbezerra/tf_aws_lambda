@@ -13,8 +13,8 @@
             "Effect": "Allow",
             "Action": "s3:*",
             "Resource": [
-                "arn:aws:s3:::will-network-backups",
-                "arn:aws:s3:::will-network-backups/*"
+                "arn:aws:s3:::network-backups",
+                "arn:aws:s3:::network-backups/*"
             ]
         }
     ]

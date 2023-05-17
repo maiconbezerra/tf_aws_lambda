@@ -5,13 +5,13 @@ locals {
   saopaulo_lambda_pol = {
 
     pol-ec2net-manipulation = {
-      description = ""
+      description = "EC2 routing table manipulation"
       policy = file("./iam_policy/pol-ec2net-manipulation.json")
       tag_name = "pol-ec2net-manipulation"
       tag_product = "IAM"
     }
     pol-s3access-networkbackups = {
-      description = "Acesso restrito ao bucket will-network-backups"
+      description = "Retrict access do bucket"
       policy = file("./iam_policy/pol-s3access-networkbackups.json")
       tag_name = "pol-s3access-networkbackups"
       tag_product = "IAM"

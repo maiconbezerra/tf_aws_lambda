@@ -39,7 +39,7 @@ locals {
       storage_size = 512
       role = terraform.workspace == local.context.will-prod.workspace_label ? aws_iam_role.saopaulo_lambda_role["lambda-fgt-backup"].arn : ""
       sg_id = terraform.workspace == local.context.will-prod.workspace_label ? aws_security_group.saopaulo_lambda_sg["sg_lambda_aws-fgt-backup"].id : ""
-      subnet_id = ["subnet-0f1a2b6ce0dd15ba3", "subnet-0e30b4d024e35c96b"]
+      subnet_id = ["subnet-11111111111111111", "subnet-22222222222222222"]
       tag_product = "Lambda"
       tag_whencreated = "20230328"
     }
@@ -54,7 +54,7 @@ locals {
       storage_size = 512
       role = terraform.workspace == local.context.will-prod.workspace_label ? aws_iam_role.saopaulo_lambda_role["lambda-fgt-randompass"].arn : ""
       sg_id = terraform.workspace == local.context.will-prod.workspace_label ? aws_security_group.saopaulo_lambda_sg["sg_lambda_aws-fgt-backup"].id : ""
-      subnet_id = ["subnet-0f1a2b6ce0dd15ba3", "subnet-0e30b4d024e35c96b"]
+      subnet_id = ["subnet-11111111111111111", "subnet-22222222222222222"]
       tag_product = "Lambda"
       tag_whencreated = "20230328"
     }
